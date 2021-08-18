@@ -11,8 +11,8 @@ body {
 }
 
 section {
-   width: 560px;
-   height: 560px;
+   width: 448px;
+   height: 448px;
    display: flex;
    flex-wrap: wrap;
 }
@@ -20,11 +20,5 @@ section {
 .pixel {
    width: 4px;
    height: 4px;
-   margin: .5px;
-   border: solid .2px black;
    box-sizing: border-box;
-   /* background-color: rgba(240, 217, 62, 1); */
-   /* background-color: rgba(193, 169, 44, 1); */
-   /* background-color: rgba(62, 62, 62, 1); */
-   /* background-color: rgba(0, 0, 0, 1); */
 }

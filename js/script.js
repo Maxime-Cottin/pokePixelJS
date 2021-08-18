@@ -1,5 +1,5 @@
 var img = new Image();
-img.src = '../res/033-nidorino.png';
+img.src = '../res/007-squirtle.png';
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
