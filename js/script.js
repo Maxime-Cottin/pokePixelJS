@@ -3,11 +3,11 @@ var img = new Image();
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
-// Création du tableau 112x112
-const tableau = new Array(112);
-for (var i = 0; i < 112; i++)
+// Création du tableau 56x56
+const tableau = new Array(56);
+for (var i = 0; i < 56; i++)
 {
-  tableau[i] = new Array(112);
+  tableau[i] = new Array(56);
 };
 
 // Faire le tour du tableau
