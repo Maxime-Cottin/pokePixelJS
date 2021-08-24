@@ -12,6 +12,7 @@ for (var i = 0; i < 112; i++)
 
 // Faire le tour du tableau
 function disp_img() {
+  $( "body" ).append( "<section></section>");
   for (let i = 0; i < tableau.length; i++) {
     for (let j = 0; j < tableau[i].length; j++) {
       var pixelImg = ctx.getImageData(j, i, 1, 1);
@@ -28,15 +29,23 @@ function disp_img() {
   }
 };   
 
-
+function clear_img() {
+  for (let i = 0; i < tableau.length; i++) {
+    for (let j = 0; j < tableau[i].length; j++) {
+      $( "section" ).remove();
+    }
+  }
+};  
 
 $( "#pkmn" ).keypress(function( event ) {
   if ( event.which == 13 ) {
+    clear_img();
     pickPoke();
     img.onload = function() {
       ctx.drawImage(img, 0, 0);
       disp_img();
     };  
+    event.preventDefault();
   }
 });
 
@@ -44,17 +53,17 @@ var pkmn = document.getElementById("pkmn");
 function pickPoke() {
   if(pkmn.value == "bulbasaur" || pkmn.value == "bulbizarre") {
     console.log(pkmn.value);
-    console.log("bulbizarre")
+    console.log("Bulbasaur / Bulbizarre")
     img.src = '../res/001-bulbasaur.png';
   }
   else if(pkmn.value == "charmander" || pkmn.value == "salameche") {
     console.log(pkmn.value);
-    console.log("salameche")
+    console.log("Charmander / Salamèche")
     img.src = '../res/004-charmander.png';
   }
   else if(pkmn.value == "squirtle" || pkmn.value == "carapuce") {
     console.log(pkmn.value);
-    console.log("carapuce")
+    console.log("Squirtle / Carapuce")
     img.src = '../res/007-squirtle.png';
   }
   else{
