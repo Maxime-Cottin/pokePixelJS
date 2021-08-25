@@ -1,0 +1,47 @@
+const json = lien vers le fichier json;
+const pokeStats = JSON.parse(json);
+
+JSON contient les 2 noms (anglais / français)
+JSON fait le lien entre les 2 noms
+Si "nom de l'image" contient "JSON.nom du pokémon" alors img.src = image correspondante
+
+Ajouter un encart avec les type du pokémon en flex pour que ce soit centré
+Ajouter un texte de description du pokémon
+
+Objet JSON
+{
+   "nom": [
+      "bulbizarre",
+      "bulbasaur"
+   ],
+   "type": [
+      "plante",
+      "poison"
+   ],
+   "desc": "Bulbizarre est un petit quadrupède vert avec une tête large. Il porte un bulbe sur son dos. Ce dernier lui sert également 
+   d'organe de stockage, puisqu’on rapporte notamment qu’en période de sécheresse, il peut survivre plusieurs jours sans manger grâce 
+   à l’énergie qui y est accumulée. Il a des taches foncées sur le corps faisant penser à un batracien. Son bulbe grandit en 
+   permanence en absorbant les rayons du soleil, et lorsque le poids du bulbe sera trop grand et empêchera Bulbizarre de se dresser 
+   sur ses deux pattes arrière, cela signifiera que son évolution en Herbizarre est proche.
+
+   Le Bulbizarre utilise couramment la capacité Vampigraine qui est l'expulsion d'une graine parasitant l'ennemi par l'orifice de 
+   son bulbe ; et le Fouet Lianes qui est l’utilisation de tiges comme membres articulés pour frapper l’adversaire. Ces tiges sont 
+   d'ailleurs fréquemment utilisées pour manipuler des objets ou se porter lui-même en hauteur. Leur force est incroyable, il peut 
+   soulever des masses équivalentes à la sienne, voire plus grosses."
+},
+{
+   "nom": [
+      "carapuce",
+      "squirtle"
+   ],
+   "type": [
+      "eau"
+   ],
+   "desc": "Carapuce est une petite tortue bipède de couleur bleue. Il possède une carapace majoritairement brune, jaune pâle au 
+   niveau du ventre. Ses yeux sont grands et violacés. Il a une queue avec un motif de spirale à son extrémité. Il possède quatre 
+   pattes avec chacune trois doigts.
+
+   Sa carapace, molle à la naissance, durcit avec le temps et lui sert à se protéger pour lancer ensuite des jets d'eau ou d'écume, 
+   mais aussi à améliorer son hydrodynamisme."
+}
+
